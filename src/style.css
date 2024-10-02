@@ -1,0 +1,9 @@
+#frameColorInput {
+    width: 150px;
+    height: 50px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}

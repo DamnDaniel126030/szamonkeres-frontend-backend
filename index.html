@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Képkeret</title>
+  </head>
+  <body id="body">
+    <main class="container">
+      <h1>Frame Generator</h1>
+      <form id="frameForm" class="row">
+        <div class="mb-3 col-md-2 col-sm-12">
+          <label for="urlInput" class="form-label">Image URL</label>
+          <input type="url" id="urlInput" class="form-control" required>
+        </div>
+        <div class="mb-3 col-md-2 col-sm-12">
+          <label for="imageWidth" class="form-label">Image width (in pixels)</label>
+          <input type="number" id="imageWidthInput" class="form-control">
+        </div>
+        <div class="mb-3 col-md-2 col-sm-12">
+          <label for="frameThickness" class="form-label">Frame thickness (in pixels)</label>
+          <input type="number" id="frameThicknessInput" class="form-control">
+        </div>
+        <div class="mb-3 col-md-2 col-sm-12">
+          <label for="frameColor" class="form-label">Frame color</label>
+          <input type="color" id="frameColorInput" class="form-control">
+        </div>
+        <!--<button type="submit" class="btn btn-info col-md-2 col-sm-12" id="submitButton">Generate</button>-->
+      </form>
+      <br>
+      <div class="text-center">
+        <img id="outPutImage">
+      </div>
+      <footer class="position-absolute bottom-0 start-0">
+        <p>Fehér Dániel István 14.S</p>
+        <button type="button" id="darkModeToggle" class="btn btn-danger">Dark mode</button>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
